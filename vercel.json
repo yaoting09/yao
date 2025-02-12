@@ -14,7 +14,7 @@
       ]
     },
     {
-      "source": "/v2.glb",  // ✅ 新增這個設定，確保 v2.glb 也能被讀取
+      "source": "/v2.glb", 
       "headers": [
         {
           "key": "Content-Type",
