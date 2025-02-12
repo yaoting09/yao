@@ -1,11 +1,17 @@
 {
-  "builds": [
+  "headers": [
     {
-      "src": "v1.glb",
-      "use": "@vercel/static",
-      "config": {
-        "mime": "model/gltf-binary"
-      }
+      "source": "/v1.glb",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "model/gltf-binary"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ]
     }
   ]
 }
