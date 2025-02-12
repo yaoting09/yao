@@ -12,8 +12,22 @@
           "value": "*"
         }
       ]
+    },
+        {
+      "source": "/v2.glb",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "model/gltf-binary"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ]
     }
   ],
+  
   "routes": [
     {
       "src": "/(.*)",
