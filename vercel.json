@@ -1,25 +1,8 @@
 {
   "headers": [
     {
-      "source": "/v1.glb",
+      "source": "/(.*)",  // ✅ 允許 public/ 內的所有檔案
       "headers": [
-        {
-          "key": "Content-Type",
-          "value": "model/gltf-binary"
-        },
-        {
-          "key": "Access-Control-Allow-Origin",
-          "value": "*"
-        }
-      ]
-    },
-    {
-      "source": "/v2.glb", 
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "model/gltf-binary"
-        },
         {
           "key": "Access-Control-Allow-Origin",
           "value": "*"
