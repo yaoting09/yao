@@ -13,8 +13,8 @@
         }
       ]
     },
-        {
-      "source": "/v2.glb",
+    {
+      "source": "/v2.glb",  // ✅ 新增這個設定，確保 v2.glb 也能被讀取
       "headers": [
         {
           "key": "Content-Type",
@@ -25,13 +25,6 @@
           "value": "*"
         }
       ]
-    }
-  ],
-  
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/public/$1"
     }
   ]
 }
