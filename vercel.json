@@ -1,13 +1,11 @@
 {
-  "headers": [
+  "builds": [
     {
-      "source": "/v1.glb",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "model/gltf-binary"
-        }
-      ]
+      "src": "v1.glb",
+      "use": "@vercel/static",
+      "config": {
+        "mime": "model/gltf-binary"
+      }
     }
   ]
 }
