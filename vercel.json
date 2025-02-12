@@ -1,7 +1,7 @@
 {
   "headers": [
     {
-      "source": "/(.*)",  // ✅ 允許 public/ 內的所有檔案
+      "source": "/(.*)", 
       "headers": [
         {
           "key": "Access-Control-Allow-Origin",
